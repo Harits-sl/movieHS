@@ -4,7 +4,11 @@ class ArtistItem extends HTMLElement {
   connectedCallback() {
     const artistItemElement = document.querySelectorAll('artist-item');
     for (let i = 0; i < artistItemElement.length; i++) {
-      artistItemElement[i].classList.add('swiper-slide-list', 'swiper-slide');
+      artistItemElement[i].classList.add(
+        'swiper-slide-list',
+        'swiper-slide',
+        'background-dark'
+      );
     }
   }
   set artist(artist) {

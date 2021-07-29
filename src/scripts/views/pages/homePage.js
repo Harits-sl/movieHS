@@ -20,12 +20,12 @@ const homePage = {
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-9">
+          <div class="col-lg-9">
             <artist-list></artist-list>
             <movie-list id="movie-top-rated"></movie-list>
             <movie-list id="movie-trending"></movie-list>
           </div>
-          <div class="col-3 vertical-line my-4">
+          <div class="col-lg-3 col-sm-7 vertical-line my-4">
             <movie-aside></movie-aside>
           </div>
         </div>

@@ -1,3 +1,5 @@
+@import 'breakpoint.css';
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,29 +9,6 @@ body {
   background-color: #1d1d1d !important;
   font-family: 'Poppins', sans-serif !important;
   font-size: 16px !important;
-}
-
-.bg-nav {
-  background-color: #343a40;
-  box-shadow: 0 2px 12px 0 rgba(27, 27, 29, 0.85);
-}
-
-div > h3 {
-  font-weight: 600;
-  padding: 12px 0;
-  margin-top: 15px;
-}
-
-.icon-font {
-  font-size: 1.6em;
-  cursor: pointer;
-  transition: 0.2s;
-  color: white;
-}
-
-.icon-font:hover {
-  text-shadow: 0px 0px 12px rgb(171 152 152);
-  color: #f1eaea;
 }
 
 .caption-item-title {
@@ -52,6 +31,31 @@ div > h3 {
   content: '';
   display: block;
   background: linear-gradient(180deg, rgb(23 23 23 / 63%) 60%, rgb(0 0 0) 170%);
+}
+
+.height-jumbotron {
+  height: 480px;
+}
+
+.heading-title {
+  font-size: 1.5rem;
+}
+
+.background-dark::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px !important;
+  background: linear-gradient(
+    180deg,
+    rgb(84 84 84 / 40%) 60.5%,
+    rgb(29, 29, 29) 170%
+  );
 }
 
 /* custom bootstrap */
@@ -85,12 +89,12 @@ div > h3 {
   );
 }
 
-.position-caption {
-  top: 50%;
-  left: 44%;
+.caption-jumbotron {
+  top: 5%;
+  left: 5%;
   margin: 0;
   z-index: 5;
-  transform: translate(-50%, -50%);
+  font-size: 13px;
 }
 
 .btn-outline-trailer {
@@ -153,23 +157,6 @@ div > h3 {
   height: 100%;
   object-fit: cover;
   border-radius: 40px !important;
-}
-
-.swiper-slide-list a::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  border-radius: 40px !important;
-  background: linear-gradient(
-    180deg,
-    rgb(84 84 84 / 40%) 60.5%,
-    rgb(29, 29, 29) 170%
-  );
 }
 
 .swiper-slide-header {

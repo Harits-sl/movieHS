@@ -14,22 +14,41 @@ const swiper = () => {
       prevEl: '.swiper-button-prev',
     },
   });
-  const headerPoster = new SwiperCore('.headerPoster', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-  });
+  // const headerPoster = new SwiperCore('.headerPoster', {
+  //   effect: 'coverflow',
+  //   grabCursor: true,
+  //   centeredSlides: true,
+  //   slidesPerView: 'auto',
+  //   coverflowEffect: {
+  //     rotate: 50,
+  //     stretch: 0,
+  //     depth: 100,
+  //     modifier: 1,
+  //     slideShadows: true,
+  //   },
+  // });
   const artist = new SwiperCore('.artist', {
-    slidesPerView: 7,
+    // Default parameters
+    slidesPerView: 3,
     spaceBetween: 20,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+      },
+      // when window width is >= 920px
+      920: {
+        slidesPerView: 7,
+        spaceBetween: 10,
+      },
+    },
 
     // Navigation arrows
     navigation: {
@@ -44,8 +63,27 @@ const swiper = () => {
     },
   });
   const movieTrending = new SwiperCore('.trending', {
-    slidesPerView: 6,
-    spaceBetween: 5,
+    // Default parameters
+    slidesPerView: 2,
+    spaceBetween: 20,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+      },
+      // when window width is >= 920px
+      920: {
+        slidesPerView: 6,
+        spaceBetween: 10,
+      },
+    },
 
     // Navigation arrows
     navigation: {
@@ -60,8 +98,27 @@ const swiper = () => {
     },
   });
   const movieTopRated = new SwiperCore('.top-rated', {
-    slidesPerView: 6,
-    spaceBetween: 5,
+    // Default parameters
+    slidesPerView: 2,
+    spaceBetween: 20,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+      },
+      // when window width is >= 920px
+      920: {
+        slidesPerView: 6,
+        spaceBetween: 10,
+      },
+    },
 
     // Navigation arrows
     navigation: {
