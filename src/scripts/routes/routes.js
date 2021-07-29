@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
 
   router
     .on(
-      '/',
+      'movieHS/',
       () => {
         swiper();
       },
@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
     .resolve();
 
   router
-    .on('movie/detail/:id', async ({ data }) => {
+    .on('movieHS/movie/detail/:id', async ({ data }) => {
       render(await detailPage.render());
       await detailPage.afterRender(data.id);
     })
