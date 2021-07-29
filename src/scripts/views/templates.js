@@ -106,7 +106,7 @@ const listViewMoviesTemplates = (title, isTrending) => {
 };
 
 const itemViewMovieTemplates = (movie) => `
-  <a href="movie/detail/${movie.id}" 
+  <a href="movieHS/detail/${movie.id}" 
   data-navigo 
   class="position-relative" 
   style="top: 0;">

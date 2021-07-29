@@ -27,8 +27,13 @@ class MovieAside extends HTMLElement {
 
       <div class="row mb-3">
         <div class="col-5">
-          <img src="https://image.tmdb.org/t/p/w342${movie.poster_path}" 
-          class="w-100 rounded-lg" alt="...">
+          <a href="movieHS/detail/${movie.id}" 
+          data-navigo 
+          class="position-relative" 
+          style="top: 0;">
+            <img src="https://image.tmdb.org/t/p/w342${movie.poster_path}" 
+            class="w-100 rounded-lg" alt="...">
+          </a>
         </div>
         <div class="col-7">
           <div class="d-flex align-items-start flex-column h-100">

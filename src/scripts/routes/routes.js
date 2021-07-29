@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
     .resolve();
 
   router
-    .on('movieHS/movie/detail/:id', async ({ data }) => {
+    .on('movieHS/detail/:id', async ({ data }) => {
       render(await detailPage.render());
       await detailPage.afterRender(data.id);
     })
